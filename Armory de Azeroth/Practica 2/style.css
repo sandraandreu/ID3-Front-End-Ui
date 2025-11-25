@@ -1,0 +1,100 @@
+/* CSS RESET*/
+
+a,svg{display:inline-block}*,::after,::before{box-sizing:border-box}*{margin:0;padding:0;font:inherit}html{scroll-behavior:smooth;height:100%}body,html{min-height:100%}ol,ul{list-style:none}a{color:inherit;text-decoration:none}svg{max-width:100%}canvas,img,picture,video{display:block;max-width:100%}button{cursor:pointer;border-radius:0;border:none;background-color:transparent}input,select,textarea{color:inherit;letter-spacing:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}body{-webkit-font-smoothing:antialiased;text-rendering:optimizeSpeed}
+
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color:#572C04 ;
+}
+
+.card {
+    width: 370px;
+    height: 550px;
+    background-image: url(img/background_blue\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
+    margin: 56px;
+    font-family: GoudySans Md BT;
+    font-size: 16px;
+    color: #572C04;
+}
+
+.card__background {
+    background-image: url(img/background_beige.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: GoudyHvyface BT;
+    font-size: 18px;
+}
+.card__header_level {
+    border: #572C04 2px solid;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.card__img {
+    height: 230px;
+}
+.card__img_character {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    object-position: center;
+}
+
+.card__body_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__body_group_item {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    font-weight: bold;
+}
+.card__body_tittle {
+    font-size: 20px;
+}
+
+.card__statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__statistics_group_item {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    font-weight: bold;
+}
+.card__statistics_tittle {
+    font-size: 20px;
+}
+
+.card__footer_group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__footer_group_item {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
