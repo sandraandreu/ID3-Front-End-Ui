@@ -1,45 +1,74 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Café Aurora - Home</title>
-        <link rel="stylesheet" href="../Css/style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Aurora - Home</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+  </head>
 
-    <body>
+  <body>
+    <div class="topBar">
+      <div>
+        <img class="icon24px" src="../Img/Icon_back_arrow.svg" alt="" />
+      </div>
+      <h2>Detalle</h2>
+      <div>
+        <img class="icon24px" src="../Img/icon_favorites.svg" alt="" />
+      </div>
+    </div>
 
-        <div class="topBar">
-            <div>
-                <img class="icon24px" src="../Img/Icon_back_arrow.svg" alt="">
-            </div>
-            <h2>Detalle</h2>
-            <div>
-                <img class="icon24px" src="../Img/icon_favorites.svg" alt="">
-            </div>
+    <main class="productDetail">
+      <div class="productDetail__img">
+        <img src="../Img/expreso_detail.png" alt="" />
+      </div>
+
+      <div class="productDetail__mainInfo">
+        <h3>Espresso Intenso</h3>
+        <div class="productDetail__reviews">
+          <img class="icon20px" src="../Img/icon__start_full.svg" alt="" />
+          <img class="icon20px" src="../Img/icon__start_full.svg" alt="" />
+          <img class="icon20px" src="../Img/icon__start_full.svg" alt="" />
+          <img class="icon20px" src="../Img/icon__start_full.svg" alt="" />
+          <img class="icon20px" src="../Img/icon__start.svg" alt="" />
+          <span class="productDetail__puntuation">(4.8)</span>
         </div>
-
-        <main class="productDetail">
-
-            <div class="productDetail__img">
-                <img src="../Img/expreso_detail.png" alt="">
-            </div>
-
-            <div class="productDetail__content">
-                <h3>Espresso Intenso</h3>
-                <div class="productDetail__reviews">
-                    <img class="icon20px" src="../Img/icon__start_full.svg" alt="">
-                    <img class="icon20px" src="../Img/icon__start_full.svg" alt="">
-                    <img class="icon20px" src="../Img/icon__start_full.svg" alt="">
-                    <img class="icon20px" src="../Img/icon__start_full.svg" alt="">
-                    <img class="icon20px" src="../Img/icon__start.svg" alt="">
-                    <span class="productDetail__puntuation">(4.8)</span>
-                </div>
-                
-            </div>
-            
-
-        </main>
-
-        
-    </body>
+        <span class="productDetail__price">3.50€</span>
+        <p>
+          Nuestro espresso signature combina granos 100% arábica de origen único
+          de las montañas de Colombia. Tostado artesanalmente para resaltar sus
+          notas de chocolate negro, caramelo y un toque cítrico que perdura en
+          el paladar.
+        </p>
+      </div>
+      <div class="productDetail__characteristics">
+        <h4>Ingredientes y Origen</h4>
+        <ul>
+          <li>
+            <img src="../Img/icon_check.svg" alt="" />
+            <span>Café arábica de Colombia</span>
+          </li>
+          <li>
+            <img src="../Img/icon_check.svg" alt="" />
+            <span>Tostado medio-oscuro</span>
+          </li>
+          <li>
+            <img src="../Img/icon_check.svg" alt="" />
+            <span>Proceso lavado</span>
+          </li>
+          <li>
+            <img src="../Img/icon_check.svg" alt="" />
+            <span>Certificación orgánica</span>
+          </li>
+        </ul>
+      </div>
+      <div class="productDetail__addToCar">
+        <div class="productDetail__quantity">
+          <img src="../Img/icon_minus.svg" alt="" />
+          <span>1</span>
+          <img src="../Img/icon_plus.svg" alt="" />
+        </div>
+        <button>Añadir al carrito - €3.50</button>
+      </div>
+    </main>
+  </body>
 </html>
