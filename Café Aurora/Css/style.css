@@ -354,3 +354,53 @@ main {
 .contact__header h3 {
   font-size: 32px;
 }
+
+/*Form*/
+
+/*Next Steps*/
+
+.contact__nextSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.contact__nextSteps h4 {
+  font-weight: normal;
+}
+
+.contact__nextSteps ol {
+  counter-reset: number;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact__nextSteps li {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+  counter-increment: number;
+}
+
+.contact__nextSteps li::before {
+  content: counter(number);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  
+  color: white;
+  font-size: 14px;
+  background-color: #2d5a27;
+  border-radius: 100%;
+}
