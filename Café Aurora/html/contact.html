@@ -20,12 +20,28 @@
             <h3>¿Tienes alguna pregunta?</h3>
             <p>Nos encantaría escucharte. Rellena el formulario y te responderemos pronto.</p>
         </header class="contact__header">
-        <div class="contact__form">
-            <form>
-
-            </form>
-            <button class="callToAction">Enviar formulario</button>
-        </div>
+        <form class="contact__form">
+          <div class="contact__formField">
+            <label for="formName">Nombre</label>
+            <input id="formName" name="name" type="text" required placeholder="Tu nombre completo">
+          </div>
+          <div class="contact__formField">
+            <label for="formEmail">Email</label>
+            <input id="formEmail" name="email" type="email" required placeholder="tu@email.com">
+          </div>
+          <div class="contact__formField">
+            <label for="formPhone">Teléfono</label>
+            <input id="formPhone" name="phone" type="tel" placeholder="+34 600 000 000">
+          </div>
+          <div class="contact__formField">
+            <label for="formMessage">Mensaje</label>
+            <textarea id="formMessage" name="message" required placeholder="Cuéntanos qué necesitas..." maxlength="500"></textarea>
+          </div>
+          <div class="contact__formField">
+            <label for="acceptTerms"><input id="acceptTerms" name="acceptTerms" type="checkbox" required>Acepto los términos y condiciones y la política de privacidad</label>
+          </div>
+          <button class="callToAction">Enviar formulario</button>
+        </form>
         <div class="contact__nextSteps">
             <h4>¿Qué sucede después?</h4>
             <ol>
