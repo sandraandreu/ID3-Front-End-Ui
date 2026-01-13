@@ -1,32 +1,7 @@
-/*Top bar y bottom bar*/
-
-.topBar {
-  height: 72px;
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  inset: 0 0 auto 0;
-  z-index: 3;
-  background-color: white;
-  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1);
-}
-
-.bottomNav {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  inset: auto 0 0 0;
-  background-color: white;
-  border: 1px solid rgb(0, 0, 0, 0.1);
-}
-
 /*General*/
 
 body {
+  padding-top: 72px;
   font-family: Inter;
   font-size: 16px;
   color: #1a1a1a;
@@ -58,6 +33,32 @@ main {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+/*Top bar y bottom bar*/
+
+.topBar {
+  height: 72px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1);
+}
+
+.bottomNav {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  inset: auto 0 0 0;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 /*Category Tag*/
@@ -259,7 +260,6 @@ main {
 /*Img*/
 
 .productDetail__img {
-  margin-top: 72px;
   width: 100%;
   height: 280px;
 }
@@ -368,7 +368,6 @@ main {
 /*Header*/
 
 .contact__header {
-  margin-top: 72px;
   display: flex;
   flex-direction: column;
   gap: 8px;
