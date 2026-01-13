@@ -204,7 +204,21 @@ main {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  position:relative
 }
+
+.product::after{
+  padding: 4px 8px;
+}
+
+[data-category=""]:after{
+  visibility: hidden;
+}
+
+[data-category="VEGANO"]:after{
+  background-color: #28A745;
+}
+
 
 .product__img {
   width: 100%;
