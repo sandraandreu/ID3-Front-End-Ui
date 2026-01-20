@@ -35,7 +35,7 @@ main {
   gap: 32px;
 }
 
-/*Top bar y bottom bar*/
+/*Top bar*/
 
 .topBar {
   height: 72px;
@@ -49,6 +49,75 @@ main {
   background-color: white;
   box-shadow: 0 1px 3px 0 rgb(0, 0, 0, 0.1);
 }
+
+.toggle {
+  display: none;
+}
+
+.toggle + .menu {
+  display: none;
+}
+
+.toggle:checked + .menu {
+  display: block;
+}
+
+
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  padding: 16px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  display: block;
+}
+
+
+/*Bottom bar*/
 
 .bottomNav {
   padding: 16px;
