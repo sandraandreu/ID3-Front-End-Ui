@@ -28,26 +28,26 @@
         </header class="contact__header">
         <form class="contact__form">
           <div class="contact__formField">
-            <label for="formName">Nombre<span class="required">*</span></label>
-            <input id="formName" name="name" type="text" required placeholder="Tu nombre completo">
+            <label for="formName">Nombre</label>
+            <input id="formName" name="name" type="text" required="true" placeholder="Sandra Andreu">
           </div>
           <div class="contact__formField">
-            <label for="formEmail">Email<span class="required">*</span></label>
-            <input id="formEmail" name="email" type="email" required placeholder="tu@email.com">
+            <label for="formEmail">Email</label>
+            <input id="formEmail" name="email" type="email" required="true" placeholder="tu@email.com">
           </div>
           <div class="contact__formField">
             <label for="formPhone">Teléfono</label>
             <input id="formPhone" name="phone" type="tel" placeholder="+34 600 000 000">
           </div>
           <div class="contact__formField">
-            <label for="formMessage">Mensaje<span class="required">*</span></label>
-            <textarea id="formMessage" name="message" required placeholder="Cuéntanos qué necesitas..." maxlength="500"></textarea>
+            <label for="formMessage">Mensaje</label>
+            <textarea id="formMessage" name="message" required="true" placeholder="Cuéntanos qué necesitas..." maxlength="500"></textarea>
           </div>
           <div class="contact__formField">
             <label for="acceptTerms"><input id="acceptTerms" name="acceptTerms" type="checkbox" required>
               <span>Acepto los términos y la política de privacidad</span></label>
           </div>
-          <button class="callToAction">Enviar formulario</button>
+          <input class="callToAction" type="submit" value="Enviar formulario">
         </form>
         <div class="contact__nextSteps">
             <h4>¿Qué sucede después?</h4>

@@ -61,7 +61,6 @@ main {
   display: block;
 }
 
-
 .menu {
   position: fixed;
   inset: 0;
@@ -74,7 +73,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .icon__close {
@@ -94,7 +92,6 @@ main {
   gap: 12px;
 }
 
-
 .nav__item {
   text-decoration: none;
   color: #fefaf6;
@@ -106,7 +103,6 @@ main {
 
   display: block;
 }
-
 
 /*Bottom bar*/
 
@@ -459,7 +455,8 @@ textarea::placeholder {
   color: rgba(26, 26, 26, 0.5);
 }
 
-.required {
+label:has(+ input[required="true"]):after , label:has(+ textarea[required="true"]):after {
+  content: "*";
   color: rgba(220, 53, 69, 1);
 }
 
