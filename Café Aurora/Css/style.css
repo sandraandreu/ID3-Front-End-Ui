@@ -506,3 +506,4 @@ label:has(+ input[required="true"]):after , label:has(+ textarea[required="true"
   background-color: #2d5a27;
   border-radius: 100%;
 }
+
