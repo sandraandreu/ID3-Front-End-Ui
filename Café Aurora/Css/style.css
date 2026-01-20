@@ -38,8 +38,7 @@ main {
 /*Top bar*/
 
 .topBar {
-  height: 72px;
-  padding: 0 16px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,9 +66,9 @@ main {
   position: fixed;
   inset: 0;
   z-index: 99;
-  padding: 16px;
+  padding: 20px 16px;
 
-  background-color: white;
+  background-color: #fefaf6;
 
   display: flex;
   flex-direction: column;
@@ -78,31 +77,23 @@ main {
 
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.icon__close {
+  text-align: right;
 }
 
 .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  height: 80vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 
-.menu li {
-  margin: 0;
-}
 
 .menu a {
   text-decoration: none;
