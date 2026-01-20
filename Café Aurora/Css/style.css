@@ -68,7 +68,7 @@ main {
   z-index: 99;
   padding: 20px 16px;
 
-  background-color: #fefaf6;
+  background-color: #2d5a27;
 
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ main {
   text-align: right;
 }
 
-.menu ul {
+.nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -95,9 +95,9 @@ main {
 }
 
 
-.menu a {
+.nav__item {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #fefaf6;
   font-size: 16px;
   font-weight: 500;
 
