@@ -268,7 +268,7 @@ main {
 .product {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 250px;
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
@@ -301,6 +301,7 @@ main {
   font-family: Playfair Display;
   color: #2d5a27;
 }
+
 
 /*PRODUCT DETAIL*/
 

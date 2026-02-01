@@ -1,0 +1,151 @@
+/* pasar el css a otro documento, propiedades personalizadas(valor y uso),
+       poner nombre a las clases para que no haya html ul por ejemplo,nombres de las clases en bem*/
+:root {
+  /*Colors*/
+  --white: #fff;
+  --gray: #333;
+  --soft-gray: #999;
+  --black: #000;
+
+  --background: var(--gray);
+  --text-color: var(--white);
+
+  /*Space*/
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-32: 32px;
+
+  /*Fonts Size*/
+  --font-size-normal: 18px;
+  --font-size-tittle: 32px;
+  
+  /*Font weight*/
+  --font-weight-bold: 700;
+
+  /*Font style*/
+  --font-style-italic: italic;
+
+  /*Borders*/
+  --border-6-black: var(--space-6) solid var(--black);
+  --border-1-softgray: 1px solid var(--soft-gray);
+
+  /*Padding*/
+  --padding-content: var(--space-8) var(--space-16);
+}
+
+@media (width > 720px) {
+  :root {
+    --font-size-normal: 16px;
+    --font-size-tittle: 24px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-normal);
+  line-height: 1.4;
+}
+
+body {
+  padding: 0 0 var(--space-16);
+}
+
+.header {
+  background-color: var(--background);
+  color: var(--text-color);
+  border: var(--border-6-black);
+}
+
+.header__nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav__item {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: var(--padding-content);
+  border-top: var(--border-1-softgray);
+}
+
+.header__title {
+  font-size: var(--font-size-tittle);
+  font-style: var(--font-style-italic);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-16);
+}
+
+main {
+  padding: 0 var(--space-16);
+}
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: var(--border-6-black);
+  margin-bottom: var(--space-16);
+}
+
+.card__tittle {
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  padding: var(--padding-content);
+}
+
+.card__content {
+  padding: var(--padding-content);
+}
+
+.sidebar {
+  background-color: var(--background);
+  border: var(--border-6-black);
+  padding: var(--padding-content);
+  color: var(--text-color);
+}
+
+@media (width>1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav__list {
+    display: flex;
+    gap: var(--space-16);
+  }
+  .header__nav__list {
+    border-top: none;
+  }
+
+  main {
+    margin-top: 32px;
+    display: flex;
+    gap: var(--space-16);
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-16);
+  }
+
+  .card {
+    flex: 0 0 calc(33% - var(--space-16));
+  }
+
+  .sidebar {
+    min-width: 300px;
+  }
+}
